@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.Testcases.LoginTest">
+      <class name="org.Testcases.New_Submission_PA">
         <methods>
           <include name="LanchApplication"/>
-          <include name="loginpage"/>
+          <include name="new_Submission_PA"/>
         </methods>
-      </class> <!-- org.Testcases.LoginTest -->
+      </class> <!-- org.Testcases.New_Submission_PA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
