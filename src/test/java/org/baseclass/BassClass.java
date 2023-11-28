@@ -1,12 +1,15 @@
-package org.BaseClass;
+package org.baseclass;
+
+import static org.testng.Assert.assertEquals;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.POM.AccountCreation;
-import org.POM.LoginPage;
+import org.pomclass.AccountCreation;
+import org.pomclass.LoginPage;
+import org.pomclass.NewSubmissionPA;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
@@ -23,6 +26,7 @@ public class BassClass {
 	Properties prop;
 	LoginPage loginPage;
 	AccountCreation accountCreation;
+	NewSubmissionPA panewSubmission;
 	public Page lanchBrowser(String browserName) {
 		playwright = Playwright.create();
 

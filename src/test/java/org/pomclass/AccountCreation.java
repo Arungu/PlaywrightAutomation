@@ -1,4 +1,4 @@
-package org.POM;
+package org.pomclass;
 
 public class AccountCreation {
 	

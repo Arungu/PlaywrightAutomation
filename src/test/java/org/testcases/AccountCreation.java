@@ -1,27 +1,31 @@
-package org.Testcases;
+package org.testcases;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.BaseClass.BassClass;
-import org.testng.annotations.BeforeMethod;
+import org.baseclass.BassClass;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BassClass{
-	
+import com.microsoft.playwright.Browser;
+
+public class AccountCreation extends BassClass {
 	@BeforeTest
 	public void LanchApplication() throws FileNotFoundException, IOException {
 		lanchBrowser("chrome");
-		context = browser.newContext();
+		context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1280, 720));
 		page = context.newPage();
 		page.navigate(getproperty("pc_url"));
+	
 	}
 	@Test
-	public void loginpage() throws FileNotFoundException, IOException {
+	public void accountCreationPC() throws FileNotFoundException, IOException {
 		
 		login();
+		
+		accountCreation();
 
 	}
+	
 
 }

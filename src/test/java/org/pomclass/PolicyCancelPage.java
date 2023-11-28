@@ -1,6 +1,6 @@
-package org.POM;
+package org.pomclass;
 
-public class PolicyCancel {
+public class PolicyCancelPage {
 	
 	private String actions="//*[@id='PolicyFile:PolicyFileMenuActions-btnInnerEl']";
 	private String cancel_Policy="//*[@id='PolicyFile:PolicyFileMenuActions:PolicyFileMenuActions_NewWorkOrder:PolicyFileMenuActions_CancelPolicy-textEl']";
@@ -14,6 +14,7 @@ public class PolicyCancel {
 	private String warning_Message_Ok="//*[text()='OK']";
 	private String tittle_Bar_Status="//*[@id='JobComplete:JobCompleteScreen:ttlBar']";
 	private String view_Your_Policy="//*[@id='JobComplete:JobCompleteScreen:JobCompleteDV:ViewPolicy-inputEl']";
+	private String policy_Number="//*[@id='PolicyFile_Summary:Policy_SummaryScreen:Policy_Summary_PolicyDV:PolicyNumber-inputEl']";
 	private String policy_Transactions="//*[@id='PolicyFile:MenuLinks:PolicyFile_PolicyFile_Jobs']";
 	private String policy_Current_Status="//div[@id='PolicyFile_Jobs/DetailsTitleCard']//table//table[1]//tr//td[5]//div";
 	
@@ -86,8 +87,15 @@ public class PolicyCancel {
 	public String getView_Your_Policy() {
 		return view_Your_Policy;
 	}
+	
 	public void setView_Your_Policy(String view_Your_Policy) {
 		this.view_Your_Policy = view_Your_Policy;
+	}	
+	public String getPolicy_Number() {
+		return policy_Number;
+	}
+	public void setPolicy_Number(String policy_Number) {
+		this.policy_Number = policy_Number;
 	}
 	public String getPolicy_Transactions() {
 		return policy_Transactions;

@@ -4,6 +4,9 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="org.Testcases.LoginTest"/>
+      <class name="org.Testcases.AccountCreation"/>
+      <class name="org.Testcases.New_Submission_PA"/>
+      <class name="org.Testcases.Policy_Cancel"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

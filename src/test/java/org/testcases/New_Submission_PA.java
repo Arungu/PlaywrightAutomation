@@ -1,4 +1,4 @@
-package org.Testcases;
+package org.testcases;
 
 import static org.testng.Assert.assertEquals;
 
@@ -6,8 +6,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import org.BaseClass.BassClass;
-import org.POM.NewSubmissionPA;
+import org.baseclass.BassClass;
+import org.pomclass.NewSubmissionPA;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -23,15 +23,8 @@ public class New_Submission_PA extends BassClass{
 			context = browser.newContext();
 			page = context.newPage();
 			page.navigate(getproperty("pc_url"));
-		}
-		
-//	@Test(priority = 1)
-//	public void loginpage() throws FileNotFoundException, IOException {
-//			
-//			login();
-//
-//		}
-		
+		}	
+				
 	@Test
 //	(priority = 2)
 	public void new_Submission_PA() throws FileNotFoundException, IOException {

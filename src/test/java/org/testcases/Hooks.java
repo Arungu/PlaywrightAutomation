@@ -1,16 +1,18 @@
-package org.Testcases;
+package org.testcases;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-import org.BaseClass.BassClass;
+import org.baseclass.BassClass;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 
 public class Hooks extends BassClass{
-	@BeforeTest
+	@BeforeMethod
 	public void LanchApplication() throws FileNotFoundException, IOException {
 		lanchBrowser("chrome");
 		context = browser.newContext();
@@ -19,7 +21,7 @@ public class Hooks extends BassClass{
 	}
 	
 	
-	@AfterTest
+	@AfterMethod
 	public void closeBrowser() {
 	   // page.context().browser().close();
 		browser.close();
